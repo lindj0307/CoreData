@@ -6,11 +6,42 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		04F77F1C1B6A52E60001837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F77F171B6A52E40001837A /* HitList.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F77EEF1B6A52E30001837A;
+			remoteInfo = HitList;
+		};
+		04F77F1E1B6A52E60001837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F77F171B6A52E40001837A /* HitList.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F77F071B6A52E40001837A;
+			remoteInfo = HitListTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F77F171B6A52E40001837A /* HitList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HitList.xcodeproj; path = HitList/HitList.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		04F77EDF1B6A51CE0001837A = {
 			isa = PBXGroup;
 			children = (
+				04F77F171B6A52E40001837A /* HitList.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		04F77F181B6A52E40001837A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F77F1D1B6A52E60001837A /* HitList.app */,
+				04F77F1F1B6A52E60001837A /* HitListTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,11 +61,34 @@
 			);
 			mainGroup = 04F77EDF1B6A51CE0001837A;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04F77F181B6A52E40001837A /* Products */;
+					ProjectRef = 04F77F171B6A52E40001837A /* HitList.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04F77F1D1B6A52E60001837A /* HitList.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HitList.app;
+			remoteRef = 04F77F1C1B6A52E60001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04F77F1F1B6A52E60001837A /* HitListTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HitListTests.xctest;
+			remoteRef = 04F77F1E1B6A52E60001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		04F77EE41B6A51CE0001837A /* Debug */ = {
