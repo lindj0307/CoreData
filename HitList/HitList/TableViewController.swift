@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController {
     
-    var names = [String]()
+    //定义保存姓名数组
+    //var names = [String]()
+    //定义CoreData对象,用于替换上面的String
+    var people = [NSManagedObject]()
+    
+    
     
     @IBAction func addName(sender: AnyObject) {
         
         var alert = UIAlertController(title: "New name", message: "Add a new name", preferredStyle: UIAlertControllerStyle.Alert)
         let saveActon = UIAlertAction(title: "Save", style: UIAlertActionStyle.Default) { (action: UIAlertAction!) -> Void in
             let textField = alert.textFields![0] as! UITextField
-            self.names.append(textField.text)
+//            self.names.append(textField.text)
+            self.saveName(textField.text)
 //            self.tableView.reloadData()
-            let indexPath = NSIndexPath(forRow: (self.names.count - 1), inSection: 0)
+            let indexPath = NSIndexPath(forRow: (self.people.count - 1), inSection: 0)
             self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
         }
         
@@ -35,6 +42,29 @@ class TableViewController: UITableViewController {
         presentViewController(alert, animated: true, completion: nil)
     }
 
+    func saveName(text: String) {
+        //1 取得总代理和托管对象内容总管
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        //2 建立一个entit
+        let  entity = NSEntityDescription.entityForName("Person", inManagedObjectContext: managedContext!)
+        let  person = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+
+        //3 保存文本框打值到person
+        person.setValue(text, forKey: "name")
+        
+        //4 保存entity到托管对象内容总管
+        var error: NSError?
+        if !managedContext!.save(&error) {
+            print("Could not save \(error),\(error?.userInfo))\n")
+        }
+        
+        //5
+        people.append(person)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +73,27 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        //1
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let manageObjectContext = appDelegate.managedObjectContext!
+        
+        //2
+        let fetchRequst = NSFetchRequest(entityName: "Person")
+        
+        //3
+        var error: NSError?
+        
+        let fetchResults = manageObjectContext.executeFetchRequest(fetchRequst, error: &error) as! [NSManagedObject]?
+        
+        if let results = fetchResults {
+            people = results
+        } else {
+                print("Could not save \(error),\(error?.userInfo))")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,14 +112,14 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return names.count
+        return people.count
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-
-        cell.textLabel?.text = names[indexPath.row]
+        let person = people[indexPath.row]
+        cell.textLabel!.text = person.valueForKey("name") as! String?
         return cell
     }
 
