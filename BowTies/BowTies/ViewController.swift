@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         insertSampleData()
+        @IBAction func segmentedControl(sender: UISegmentedControl) {
+        }
         
         let request = NSFetchRequest(entityName: "Bowtie")
         let firstTitle = segmentedControl.titleForSegmentAtIndex(0)

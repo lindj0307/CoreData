@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eZ2-X8-vov">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gfT-AO-7OR">
+            <objects>
+                <viewController id="eZ2-X8-vov" customClass="ViewController" customModule="Bow_Ties" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7MG-hI-BYn"/>
+                        <viewControllerLayoutGuide type="bottom" id="TMe-2B-sNE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fd7-hb-kyk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Dca-hF-aOY">
+                                <rect key="frame" x="26" y="30" width="548" height="29"/>
+                                <segments>
+                                    <segment title="R"/>
+                                    <segment title="O"/>
+                                    <segment title="Y"/>
+                                    <segment title="G"/>
+                                    <segment title="B"/>
+                                    <segment title="I"/>
+                                    <segment title="V"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="eZ2-X8-vov" eventType="valueChanged" id="Cvn-Ie-0xo"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7E-yd-PjO">
+                                <rect key="frame" x="26" y="80" width="240" height="183"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="76" width="348" height="226"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emp-6V-xWT">
+                                <rect key="frame" x="26" y="280" width="200" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Wear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="493" width="110" height="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="wear:" destination="eZ2-X8-vov" eventType="touchUpInside" id="bOU-gR-8Up"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bow Tie Name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXY-NI-yd1">
+                                <rect key="frame" x="290" y="80" width="191" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="323" width="191" height="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# of times worn: 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-6g-jeS">
+                                <rect key="frame" x="290" y="141" width="191" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="384" width="138" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last worn: 06/25/14" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY6-u3-d8q">
+                                <rect key="frame" x="290" y="172" width="191" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="413" width="155" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating: 4/5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89H-cb-gkT">
+                                <rect key="frame" x="290" y="112" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="355" width="84" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vl-AQ-KWY">
+                                <rect key="frame" x="374" y="280" width="200" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Rate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="264" y="493" width="110" height="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="rate:" destination="eZ2-X8-vov" eventType="touchUpInside" id="C8g-mL-ERY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Favorite*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lD-dp-Zha">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="442" width="74" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dca-hF-aOY" firstAttribute="top" secondItem="7MG-hI-BYn" secondAttribute="bottom" constant="10" id="3DZ-bs-QZt"/>
+                            <constraint firstAttribute="centerX" secondItem="Dca-hF-aOY" secondAttribute="centerX" id="At9-nY-o2f"/>
+                            <constraint firstItem="Dca-hF-aOY" firstAttribute="leading" secondItem="Fd7-hb-kyk" secondAttribute="leadingMargin" constant="60" id="FBZ-MB-YD6"/>
+                            <constraint firstItem="Dca-hF-aOY" firstAttribute="leading" secondItem="Fd7-hb-kyk" secondAttribute="leadingMargin" constant="10" id="GyR-NG-Sfn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dca-hF-aOY" secondAttribute="trailing" constant="10" id="HLa-NS-3TU"/>
+                            <constraint firstItem="Dca-hF-aOY" firstAttribute="centerX" secondItem="Fd7-hb-kyk" secondAttribute="centerX" id="MFI-PB-Fza"/>
+                            <constraint firstItem="Dca-hF-aOY" firstAttribute="top" secondItem="7MG-hI-BYn" secondAttribute="bottom" id="Oef-Rl-7nU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8lD-dp-Zha"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MFI-PB-Fza"/>
+                                <exclude reference="Oef-Rl-7nU"/>
+                                <exclude reference="FBZ-MB-YD6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8lD-dp-Zha"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteLabel" destination="8lD-dp-Zha" id="hzi-ed-Alf"/>
+                        <outlet property="imageView" destination="y7E-yd-PjO" id="N3d-c7-enV"/>
+                        <outlet property="lastWornLabel" destination="yY6-u3-d8q" id="eu6-io-tnR"/>
+                        <outlet property="nameLabel" destination="wXY-NI-yd1" id="ioK-pE-SKH"/>
+                        <outlet property="ratingLabel" destination="89H-cb-gkT" id="hae-9B-OrB"/>
+                        <outlet property="segmentedControl" destination="Dca-hF-aOY" id="4UD-s0-oUc"/>
+                        <outlet property="timesWornLabel" destination="lOy-6g-jeS" id="QsT-AD-u6O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bjh-H9-eqs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="462.75"/>
+        </scene>
+    </scenes>
+</document>

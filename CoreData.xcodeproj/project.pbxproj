@@ -35,17 +35,33 @@
 			remoteGlobalIDString = 04F77F911B6F8C730001837A;
 			remoteInfo = BowTiesTests;
 		};
+		04F77FEE1B6FB2B00001837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F77FC11B6FB2AD0001837A;
+			remoteInfo = "Bow Ties";
+		};
+		04F77FF01B6FB2B00001837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F77FD91B6FB2AE0001837A;
+			remoteInfo = "Bow TiesTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04F77F171B6A52E40001837A /* HitList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HitList.xcodeproj; path = HitList/HitList.xcodeproj; sourceTree = "<group>"; };
 		04F77FA11B6F8C730001837A /* BowTies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BowTies.xcodeproj; path = BowTies/BowTies.xcodeproj; sourceTree = "<group>"; };
+		04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Bow Ties.xcodeproj"; path = "Bow Ties/Bow Ties.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		04F77EDF1B6A51CE0001837A = {
 			isa = PBXGroup;
 			children = (
+				04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */,
 				04F77FA11B6F8C730001837A /* BowTies.xcodeproj */,
 				04F77F171B6A52E40001837A /* HitList.xcodeproj */,
 			);
@@ -69,6 +85,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		04F77FEA1B6FB2AE0001837A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F77FEF1B6FB2B00001837A /* Bow Ties.app */,
+				04F77FF11B6FB2B00001837A /* Bow TiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -87,6 +112,10 @@
 			mainGroup = 04F77EDF1B6A51CE0001837A;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 04F77FEA1B6FB2AE0001837A /* Products */;
+					ProjectRef = 04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */;
+				},
 				{
 					ProductGroup = 04F77FA21B6F8C730001837A /* Products */;
 					ProjectRef = 04F77FA11B6F8C730001837A /* BowTies.xcodeproj */;
@@ -129,6 +158,20 @@
 			fileType = wrapper.cfbundle;
 			path = BowTiesTests.xctest;
 			remoteRef = 04F77FA81B6F8C760001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04F77FEF1B6FB2B00001837A /* Bow Ties.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Bow Ties.app";
+			remoteRef = 04F77FEE1B6FB2B00001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04F77FF11B6FB2B00001837A /* Bow TiesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Bow TiesTests.xctest";
+			remoteRef = 04F77FF01B6FB2B00001837A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
