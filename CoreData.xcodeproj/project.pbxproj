@@ -21,16 +21,32 @@
 			remoteGlobalIDString = 04F77F071B6A52E40001837A;
 			remoteInfo = HitListTests;
 		};
+		04F77FA61B6F8C760001837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F77FA11B6F8C730001837A /* BowTies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F77F791B6F8C720001837A;
+			remoteInfo = BowTies;
+		};
+		04F77FA81B6F8C760001837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F77FA11B6F8C730001837A /* BowTies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F77F911B6F8C730001837A;
+			remoteInfo = BowTiesTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04F77F171B6A52E40001837A /* HitList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HitList.xcodeproj; path = HitList/HitList.xcodeproj; sourceTree = "<group>"; };
+		04F77FA11B6F8C730001837A /* BowTies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BowTies.xcodeproj; path = BowTies/BowTies.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		04F77EDF1B6A51CE0001837A = {
 			isa = PBXGroup;
 			children = (
+				04F77FA11B6F8C730001837A /* BowTies.xcodeproj */,
 				04F77F171B6A52E40001837A /* HitList.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +56,15 @@
 			children = (
 				04F77F1D1B6A52E60001837A /* HitList.app */,
 				04F77F1F1B6A52E60001837A /* HitListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F77FA21B6F8C730001837A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F77FA71B6F8C760001837A /* BowTies.app */,
+				04F77FA91B6F8C760001837A /* BowTiesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +87,10 @@
 			mainGroup = 04F77EDF1B6A51CE0001837A;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 04F77FA21B6F8C730001837A /* Products */;
+					ProjectRef = 04F77FA11B6F8C730001837A /* BowTies.xcodeproj */;
+				},
 				{
 					ProductGroup = 04F77F181B6A52E40001837A /* Products */;
 					ProjectRef = 04F77F171B6A52E40001837A /* HitList.xcodeproj */;
@@ -86,6 +115,20 @@
 			fileType = wrapper.cfbundle;
 			path = HitListTests.xctest;
 			remoteRef = 04F77F1E1B6A52E60001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04F77FA71B6F8C760001837A /* BowTies.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BowTies.app;
+			remoteRef = 04F77FA61B6F8C760001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04F77FA91B6F8C760001837A /* BowTiesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BowTiesTests.xctest;
+			remoteRef = 04F77FA81B6F8C760001837A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
