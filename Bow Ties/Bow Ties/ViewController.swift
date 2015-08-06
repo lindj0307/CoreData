@@ -54,6 +54,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func segmentedControl(sender: UISegmentedControl) {
+        let selectedValue = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)
+        let fetchRequest = NSFetchRequest(entityName: "Bowtie")
+        
+        fetchRequest.predicate = NSPredicate(format: "searchKey == %@", selectedValue!)
+        
+        var error: NSError?
+        let results = managedContext.executeFetchRequest(fetchRequest, error: &error) as! [Bowtie]?
+        
+        if let bowties = results {
+            currentBowtie = bowties.last!
+            populate(currentBowtie)
+        } else {
+            print("Could not fetch \(error), \(error!.userInfo) \n")
+        }
     }
 
     @IBAction func wear(sender: AnyObject) {
@@ -103,7 +117,7 @@ class ViewController: UIViewController {
     func populate(bowtie: Bowtie) {
         imageView.image = UIImage(data: bowtie.photoData)
         nameLabel.text = bowtie.name
-        ratingLabel.text = "Rating: \(bowtie.rating.doubleValue)/5 \n"
+        ratingLabel.text = "Rating: \(bowtie.rating.doubleValue)/5.0 \n"
         timesWornLabel.text = "# times worn: \(bowtie.timesWorn.integerValue)"
         let dateFormater = NSDateFormatter()
         dateFormater.dateStyle = .ShortStyle
