@@ -15,6 +15,7 @@
 		04F77FD41B6FB2AE0001837A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F77FD21B6FB2AE0001837A /* LaunchScreen.xib */; };
 		04F77FE01B6FB2AE0001837A /* Bow_TiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F77FDF1B6FB2AE0001837A /* Bow_TiesTests.swift */; };
 		04F77FF31B6FB2F80001837A /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F77FF21B6FB2F80001837A /* SampleData.plist */; };
+		04F77FF51B6FBC120001837A /* Bowtie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F77FF41B6FBC120001837A /* Bowtie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		04F77FDE1B6FB2AE0001837A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F77FDF1B6FB2AE0001837A /* Bow_TiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bow_TiesTests.swift; sourceTree = "<group>"; };
 		04F77FF21B6FB2F80001837A /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
+		04F77FF41B6FBC120001837A /* Bowtie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bowtie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		04F77FC31B6FB2AD0001837A /* Bow Ties */ = {
 			isa = PBXGroup;
 			children = (
+				04F77FF41B6FBC120001837A /* Bowtie.swift */,
 				04F77FF21B6FB2F80001837A /* SampleData.plist */,
 				04F77FC61B6FB2AD0001837A /* AppDelegate.swift */,
 				04F77FCB1B6FB2AE0001837A /* ViewController.swift */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F77FCC1B6FB2AE0001837A /* ViewController.swift in Sources */,
+				04F77FF51B6FBC120001837A /* Bowtie.swift in Sources */,
 				04F77FC71B6FB2AD0001837A /* AppDelegate.swift in Sources */,
 				04F77FCA1B6FB2AE0001837A /* Bow_Ties.xcdatamodeld in Sources */,
 			);
