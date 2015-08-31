@@ -49,18 +49,34 @@
 			remoteGlobalIDString = 04F77FD91B6FB2AE0001837A;
 			remoteInfo = "Bow TiesTests";
 		};
+		D4043D471B940436001CF56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4043D3E1B940435001CF56D /* Dog Walk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4043D191B940435001CF56D;
+			remoteInfo = "Dog Walk";
+		};
+		D4043D491B940436001CF56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4043D3E1B940435001CF56D /* Dog Walk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4043D2E1B940435001CF56D;
+			remoteInfo = "Dog WalkTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04F77F171B6A52E40001837A /* HitList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HitList.xcodeproj; path = HitList/HitList.xcodeproj; sourceTree = "<group>"; };
 		04F77FA11B6F8C730001837A /* BowTies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BowTies.xcodeproj; path = BowTies/BowTies.xcodeproj; sourceTree = "<group>"; };
 		04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Bow Ties.xcodeproj"; path = "Bow Ties/Bow Ties.xcodeproj"; sourceTree = "<group>"; };
+		D4043D3E1B940435001CF56D /* Dog Walk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Dog Walk.xcodeproj"; path = "Dog Walk/Dog Walk.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		04F77EDF1B6A51CE0001837A = {
 			isa = PBXGroup;
 			children = (
+				D4043D3E1B940435001CF56D /* Dog Walk.xcodeproj */,
 				04F77FE91B6FB2AE0001837A /* Bow Ties.xcodeproj */,
 				04F77FA11B6F8C730001837A /* BowTies.xcodeproj */,
 				04F77F171B6A52E40001837A /* HitList.xcodeproj */,
@@ -94,6 +110,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D4043D3F1B940435001CF56D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4043D481B940436001CF56D /* Dog Walk.app */,
+				D4043D4A1B940436001CF56D /* Dog WalkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -119,6 +144,10 @@
 				{
 					ProductGroup = 04F77FA21B6F8C730001837A /* Products */;
 					ProjectRef = 04F77FA11B6F8C730001837A /* BowTies.xcodeproj */;
+				},
+				{
+					ProductGroup = D4043D3F1B940435001CF56D /* Products */;
+					ProjectRef = D4043D3E1B940435001CF56D /* Dog Walk.xcodeproj */;
 				},
 				{
 					ProductGroup = 04F77F181B6A52E40001837A /* Products */;
@@ -172,6 +201,20 @@
 			fileType = wrapper.cfbundle;
 			path = "Bow TiesTests.xctest";
 			remoteRef = 04F77FF01B6FB2B00001837A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4043D481B940436001CF56D /* Dog Walk.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Dog Walk.app";
+			remoteRef = D4043D471B940436001CF56D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4043D4A1B940436001CF56D /* Dog WalkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Dog WalkTests.xctest";
+			remoteRef = D4043D491B940436001CF56D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

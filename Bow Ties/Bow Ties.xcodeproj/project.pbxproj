@@ -423,6 +423,7 @@
 				04F77FE51B6FB2AE0001837A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F77FE61B6FB2AE0001837A /* Build configuration list for PBXNativeTarget "Bow TiesTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				04F77FE81B6FB2AE0001837A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; normalTitle = "Rate"; ObjectID = "4vl-AQ-KWY"; */
+"4vl-AQ-KWY.normalTitle" = "Rate";
+
+/* Class = "UILabel"; text = "Rating: 4/5"; ObjectID = "89H-cb-gkT"; */
+"89H-cb-gkT.text" = "Rating: 4/5";
+
+/* Class = "UILabel"; text = "*Favorite*"; ObjectID = "8lD-dp-Zha"; */
+"8lD-dp-Zha.text" = "*Favorite*";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[0] = "R"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[0]" = "R";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[1] = "O"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[1]" = "O";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[2] = "Y"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[2]" = "Y";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[3] = "G"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[3]" = "G";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[4] = "B"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[4]" = "B";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[5] = "I"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[5]" = "I";
+
+/* Class = "UISegmentedControl"; Dca-hF-aOY.segmentTitles[6] = "V"; ObjectID = "Dca-hF-aOY"; */
+"Dca-hF-aOY.segmentTitles[6]" = "V";
+
+/* Class = "UIButton"; normalTitle = "Wear"; ObjectID = "emp-6V-xWT"; */
+"emp-6V-xWT.normalTitle" = "Wear";
+
+/* Class = "UILabel"; text = "# of times worn: 5"; ObjectID = "lOy-6g-jeS"; */
+"lOy-6g-jeS.text" = "# of times worn: 5";
+
+/* Class = "UILabel"; text = "Bow Tie Name Label"; ObjectID = "wXY-NI-yd1"; */
+"wXY-NI-yd1.text" = "Bow Tie Name Label";
+
+/* Class = "UILabel"; text = "Last worn: 06/25/14"; ObjectID = "yY6-u3-d8q"; */
+"yY6-u3-d8q.text" = "Last worn: 06/25/14";
