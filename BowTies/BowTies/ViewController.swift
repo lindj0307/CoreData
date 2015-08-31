@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  BowTies
@@ -9,12 +10,15 @@
 import UIKit
 import CoreData
 
+@IBOutlet weak var tableView: UITableView!
 class ViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var tbView: UITableView!
     @IBOutlet weak var timesWornLabel: UILabel!
     @IBOutlet weak var lastWornLabel: UILabel!
     @IBOutlet weak var favoriteLabel: UILabel!

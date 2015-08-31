@@ -10,10 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var walks:Array<NSDate> = []
+    
+    @IBOutlet weak var tableView2: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView2.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
+    
+    func tableView2(tableView: UITableView,numberOfRowsInSection section: Int) -> Int {
+        return walks.count
+    }
+    
+    func tableView2(tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
+        return "List of Walks"
+    }
+    
+    func tableView2(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+        dateFormatter.timeStyle = .MediumStyle
+        
+        let date = walks[indexPath.row]
+        cell.textLabel!.text = dateFormatter.stringFromDate(date)
+        
+        return cell
+    }
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -21,5 +47,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func add(sender: AnyObject) {
+        walks.append(NSDate())
+        tableView2.reloadData()
+    }
 }
 
