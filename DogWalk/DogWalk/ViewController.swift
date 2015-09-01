@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Dog Walk
+//  DogWalk
 //
 //  Created by 林东杰 on 8/31/15.
 //  Copyright (c) 2015 anta. All rights reserved.
@@ -8,27 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DogWalkViewController: UIViewController {
 
-    var walks:Array<NSDate> = []
+    @IBOutlet weak var tableView: UITableView!
+    var walks: Array<NSDate> = []
     
-    @IBOutlet weak var tableView2: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tableView2.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
-    func tableView2(tableView: UITableView,numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView,numberOfRowsInSection section:Int) -> Int {
         return walks.count
     }
     
-    func tableView2(tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
+    func tableView(tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
         return "List of Walks"
     }
     
-    func tableView2(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView,cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .ShortStyle
@@ -36,20 +36,20 @@ class ViewController: UIViewController {
         
         let date = walks[indexPath.row]
         cell.textLabel!.text = dateFormatter.stringFromDate(date)
-        
         return cell
     }
-   
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func add(sender: AnyObject) {
         walks.append(NSDate())
-        tableView2.reloadData()
+        tableView.reloadData()
+        
     }
+
 }
 

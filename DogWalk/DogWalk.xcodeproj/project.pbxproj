@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4043DE41B9451B5001CF56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043DE31B9451B5001CF56D /* AppDelegate.swift */; };
+		D4043DE61B9451B5001CF56D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043DE51B9451B5001CF56D /* ViewController.swift */; };
+		D4043DE91B9451B5001CF56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4043DE71B9451B5001CF56D /* Main.storyboard */; };
+		D4043DEB1B9451B5001CF56D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4043DEA1B9451B5001CF56D /* Images.xcassets */; };
+		D4043DEE1B9451B5001CF56D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4043DEC1B9451B5001CF56D /* LaunchScreen.xib */; };
+		D4043DFA1B9451B5001CF56D /* DogWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043DF91B9451B5001CF56D /* DogWalkTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4043DF41B9451B5001CF56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4043DD61B9451B5001CF56D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4043DDD1B9451B5001CF56D;
+			remoteInfo = DogWalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4043DDE1B9451B5001CF56D /* DogWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4043DE21B9451B5001CF56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4043DE31B9451B5001CF56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4043DE51B9451B5001CF56D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4043DE81B9451B5001CF56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4043DEA1B9451B5001CF56D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4043DED1B9451B5001CF56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D4043DF31B9451B5001CF56D /* DogWalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogWalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4043DF81B9451B5001CF56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4043DF91B9451B5001CF56D /* DogWalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4043DDB1B9451B5001CF56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4043DF01B9451B5001CF56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4043DD51B9451B5001CF56D = {
+			isa = PBXGroup;
+			children = (
+				D4043DE01B9451B5001CF56D /* DogWalk */,
+				D4043DF61B9451B5001CF56D /* DogWalkTests */,
+				D4043DDF1B9451B5001CF56D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4043DDF1B9451B5001CF56D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4043DDE1B9451B5001CF56D /* DogWalk.app */,
+				D4043DF31B9451B5001CF56D /* DogWalkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4043DE01B9451B5001CF56D /* DogWalk */ = {
+			isa = PBXGroup;
+			children = (
+				D4043DE31B9451B5001CF56D /* AppDelegate.swift */,
+				D4043DE51B9451B5001CF56D /* ViewController.swift */,
+				D4043DE71B9451B5001CF56D /* Main.storyboard */,
+				D4043DEA1B9451B5001CF56D /* Images.xcassets */,
+				D4043DEC1B9451B5001CF56D /* LaunchScreen.xib */,
+				D4043DE11B9451B5001CF56D /* Supporting Files */,
+			);
+			path = DogWalk;
+			sourceTree = "<group>";
+		};
+		D4043DE11B9451B5001CF56D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4043DE21B9451B5001CF56D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4043DF61B9451B5001CF56D /* DogWalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4043DF91B9451B5001CF56D /* DogWalkTests.swift */,
+				D4043DF71B9451B5001CF56D /* Supporting Files */,
+			);
+			path = DogWalkTests;
+			sourceTree = "<group>";
+		};
+		D4043DF71B9451B5001CF56D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4043DF81B9451B5001CF56D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4043DDD1B9451B5001CF56D /* DogWalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4043DFD1B9451B5001CF56D /* Build configuration list for PBXNativeTarget "DogWalk" */;
+			buildPhases = (
+				D4043DDA1B9451B5001CF56D /* Sources */,
+				D4043DDB1B9451B5001CF56D /* Frameworks */,
+				D4043DDC1B9451B5001CF56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogWalk;
+			productName = DogWalk;
+			productReference = D4043DDE1B9451B5001CF56D /* DogWalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4043DF21B9451B5001CF56D /* DogWalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4043E001B9451B5001CF56D /* Build configuration list for PBXNativeTarget "DogWalkTests" */;
+			buildPhases = (
+				D4043DEF1B9451B5001CF56D /* Sources */,
+				D4043DF01B9451B5001CF56D /* Frameworks */,
+				D4043DF11B9451B5001CF56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4043DF51B9451B5001CF56D /* PBXTargetDependency */,
+			);
+			name = DogWalkTests;
+			productName = DogWalkTests;
+			productReference = D4043DF31B9451B5001CF56D /* DogWalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4043DD61B9451B5001CF56D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = anta;
+				TargetAttributes = {
+					D4043DDD1B9451B5001CF56D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D4043DF21B9451B5001CF56D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D4043DDD1B9451B5001CF56D;
+					};
+				};
+			};
+			buildConfigurationList = D4043DD91B9451B5001CF56D /* Build configuration list for PBXProject "DogWalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4043DD51B9451B5001CF56D;
+			productRefGroup = D4043DDF1B9451B5001CF56D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4043DDD1B9451B5001CF56D /* DogWalk */,
+				D4043DF21B9451B5001CF56D /* DogWalkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4043DDC1B9451B5001CF56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4043DE91B9451B5001CF56D /* Main.storyboard in Resources */,
+				D4043DEE1B9451B5001CF56D /* LaunchScreen.xib in Resources */,
+				D4043DEB1B9451B5001CF56D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4043DF11B9451B5001CF56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4043DDA1B9451B5001CF56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4043DE61B9451B5001CF56D /* ViewController.swift in Sources */,
+				D4043DE41B9451B5001CF56D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4043DEF1B9451B5001CF56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4043DFA1B9451B5001CF56D /* DogWalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4043DF51B9451B5001CF56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4043DDD1B9451B5001CF56D /* DogWalk */;
+			targetProxy = D4043DF41B9451B5001CF56D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4043DE71B9451B5001CF56D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4043DE81B9451B5001CF56D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4043DEC1B9451B5001CF56D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4043DED1B9451B5001CF56D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4043DFB1B9451B5001CF56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4043DFC1B9451B5001CF56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4043DFE1B9451B5001CF56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DogWalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4043DFF1B9451B5001CF56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DogWalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D4043E011B9451B5001CF56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogWalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogWalk.app/DogWalk";
+			};
+			name = Debug;
+		};
+		D4043E021B9451B5001CF56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogWalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogWalk.app/DogWalk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4043DD91B9451B5001CF56D /* Build configuration list for PBXProject "DogWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4043DFB1B9451B5001CF56D /* Debug */,
+				D4043DFC1B9451B5001CF56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4043DFD1B9451B5001CF56D /* Build configuration list for PBXNativeTarget "DogWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4043DFE1B9451B5001CF56D /* Debug */,
+				D4043DFF1B9451B5001CF56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4043E001B9451B5001CF56D /* Build configuration list for PBXNativeTarget "DogWalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4043E011B9451B5001CF56D /* Debug */,
+				D4043E021B9451B5001CF56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4043DD61B9451B5001CF56D /* Project object */;
+}

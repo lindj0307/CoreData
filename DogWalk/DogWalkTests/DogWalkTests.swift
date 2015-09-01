@@ -1,6 +1,6 @@
 //
-//  Dog_WalkTests.swift
-//  Dog WalkTests
+//  DogWalkTests.swift
+//  DogWalkTests
 //
 //  Created by 林东杰 on 8/31/15.
 //  Copyright (c) 2015 anta. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class Dog_WalkTests: XCTestCase {
+class DogWalkTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

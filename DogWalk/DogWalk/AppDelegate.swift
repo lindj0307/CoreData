@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Dog Walk
+//  DogWalk
 //
 //  Created by 林东杰 on 8/31/15.
 //  Copyright (c) 2015 anta. All rights reserved.
