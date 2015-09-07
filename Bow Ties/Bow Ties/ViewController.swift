@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var timesWornLabel: UILabel!
     @IBOutlet weak var tbView: UITableView!

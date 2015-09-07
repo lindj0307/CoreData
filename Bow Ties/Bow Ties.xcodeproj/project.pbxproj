@@ -42,6 +42,8 @@
 		04F77FDF1B6FB2AE0001837A /* Bow_TiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bow_TiesTests.swift; sourceTree = "<group>"; };
 		04F77FF21B6FB2F80001837A /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
 		04F77FF41B6FBC120001837A /* Bowtie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bowtie.swift; sourceTree = "<group>"; };
+		D4E8E4651B98683A002AEB8E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D4E8E4661B98683A002AEB8E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F77FCE1B6FB2AE0001837A /* Base */,
+				D4E8E4651B98683A002AEB8E /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F77FD31B6FB2AE0001837A /* Base */,
+				D4E8E4661B98683A002AEB8E /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
